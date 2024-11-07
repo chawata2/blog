@@ -1,9 +1,10 @@
-# Nuxt Content
-
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
-
-Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[...slug].vue` component.
-
+---
+title: "ちゃわた"
+discription: "ちゃわたの個人ブログ。"
 ---
 
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+## このサイトについて
+
+Webエンジニアの[ちゃわた](/about)が不定期で記事を投稿します。
+
+## Posts
