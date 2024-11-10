@@ -1,5 +1,5 @@
 ---
-title: "About | ちゃわた"
+title: "About"
 discription: "ちゃわたとは。"
 created_at: 2024-11-08
 updated_at: 2024-11-08
