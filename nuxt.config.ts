@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxtjs/robots"],
 
   routeRules: {
     "/": { prerender: true },
@@ -20,5 +20,12 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  site: {
+    url: "https://chawata2.github.io/",
+    name: "chawata's blog",
+  },
+  sitemap: {
+    strictNuxtContentPaths: true,
   },
 });
