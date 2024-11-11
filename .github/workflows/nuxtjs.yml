@@ -4,20 +4,19 @@ on:
   push:
     branches:
       - master
-env:
-  NUXT_PUBLIC_GTAG_ID: ${{secrets.NUXT_PUBLIC_GTAG_ID}}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      NODE_ENV: production
+      NUXT_PUBLIC_GTAG_ID: ${{secrets.NUXT_PUBLIC_GTAG_ID}}
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Set NODE_ENV
-      - run: echo "NODE_ENV=production" >> $GITHUB_EN
       # Pick your own package manager and build script
       - run: npm install
       - run: npx nuxt build --preset github_pages
