@@ -28,7 +28,4 @@ export default defineNuxtConfig({
   sitemap: {
     strictNuxtContentPaths: true,
   },
-  gtag: {
-    enabled: process.env.NODE_ENV === "production",
-  },
 });

@@ -9,7 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NODE_ENV: production
       NUXT_PUBLIC_GTAG_ID: ${{secrets.NUXT_PUBLIC_GTAG_ID}}
     steps:
       - uses: actions/checkout@v4
