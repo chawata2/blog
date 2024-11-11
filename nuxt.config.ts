@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxtjs/robots"],
+  modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxtjs/robots", "nuxt-gtag"],
 
   routeRules: {
     "/": { prerender: true },
@@ -27,5 +27,8 @@ export default defineNuxtConfig({
   },
   sitemap: {
     strictNuxtContentPaths: true,
+  },
+  gtag: {
+    enabled: process.env.NODE_ENV === "production",
   },
 });
